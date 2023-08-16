@@ -1,1 +1,78 @@
 Anotacoes
+https://gist.github.com/paulo-raoni/1a8f52138f67fd40379f454ee61aa4ce
+
+- A branch master guarda o histórico oficial das entregas, 
+
+****** Developer ******
+- A branch developer serve como integração entre todas as branches de funcionalidades (feature branches).
+- Cada funcionalidade deve ter sua própria branch, e ela deve ser criada a partir da branch developer.
+- Quando uma funcionalidade for concluída, ela é mesclada (merged) novamente com a sua branch pai.
+- As features nunca devem interagir diretamente com a master. NUNCA!
+
+****** Maintenance Branches ******
+- Também conhecidas como hotfix
+- Este é a única branch que deve ser criada a partir do master.
+- Assim que a correção for finalizada, o branch é fechada e mesclada com a master e developer
+
+
+****** Release Branches *******
+Quando a branch developer estiver com funcionalidades suficientes para uma entrega, é criada uma branch 
+de entrega (release branch). 
+Quando estivermos prontos para realizar a entrega, a release é mesclada com as branches master e developer.
+
+
+********* Nomenclatures *********
+- developer, dev ou develop
+A branch developer é o único meio de comunicação direta com a branch master.
+
+- feature
+As features são branchs para desenvolver novas funcionalidades, e são geradas a partir da developer
+Ao final do ciclo de vida mesclam (fazem merge) de volta para a developer. Convenção de nomenclatura:
+feature/<nome_da_nova_funcionalidade>.
+
+
+- hotfix
+hotfix/<nome_da_funcionalidade>
+
+- release
+Nem sempre são usadas
+Na criação do branch de lançamento é decidido qual versão o projeto terá
+
+release/MAJOR.MINOR.PATCH.
+
+
+
+-- Criar a main
+-- Criar a branch developer
+git push origin developer
+
+criar e mudar para a branch developer local
+-- git checkout -b developer
+
+-- git branch
+Para confirmar a branch
+
+--git pull --rebase
+Baixar fazer merge dos arquivos
+-- rebase não faz commit do merge realizado
+
+
+**** criar uma nova branch de feature ***
+git checkout -b feature/servico-usuario 
+
+
+******* comitando a branch feature ***
+- verifique as alteracoes realizadas
+git status
+
+
+
+
+
+
+Git pull
+git fetch e git merge origen/master
+
+Git fetch
+ baixa os comites sem afetar o local
+ 

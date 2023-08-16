@@ -65,7 +65,21 @@ git checkout -b feature/servico-usuario
 - verifique as alteracoes realizadas
 git status
 
+- Adicione os arquivos que serão comitados
+git add <nome-arquivo1> <nome-arquivo2> <nome-arquivoN>
 
+-- Verificar os arquivos staged
+git status
+
+-- Após verificacao comitar os arquivos
+git commit -m "mensagem"
+
+Enviar as alteracoes para o servidor
+git push 
+Utilizar o comando que aparecer na tela
+
+Criar a branch no remote e deixa a branch configurada
+git push --set-upstream origin feature/servico-usuario
 
 
 

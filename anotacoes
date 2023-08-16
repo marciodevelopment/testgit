@@ -65,6 +65,7 @@ git checkout -b feature/servico-usuario
 - verifique as alteracoes realizadas
 git status
 
+<<<<<<< HEAD
 - Adicione os arquivos que serão comitados
 git add <nome-arquivo1> <nome-arquivo2> <nome-arquivoN>
 
@@ -80,6 +81,9 @@ Utilizar o comando que aparecer na tela
 
 Criar a branch no remote e deixa a branch configurada
 git push --set-upstream origin feature/servico-usuario
+=======
+
+>>>>>>> 8d63cb7 (criado o servico de usuario)
 
 
 
